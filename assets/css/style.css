@@ -1,148 +1,132 @@
-body {
-    background-image: url('../images/8389401.jpg');
-    background-size: 200vh;
-    background-repeat: no-repeat;
-    color: rgb(0, 255, 255);
-    margin: 0;
+* {
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 0;
 }
 
-.main-body {
-    width: 100vw;
-    height: 90vh;
+body {
+    background-image: url('../images/8389401.jpg');
+    background-size: fixed;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin: 2% 2%;
+    color: rgb(0, 255, 255);
+    margin: 10px;
+    padding: 0;
 }
 
 header {
     background-color: rgba(0, 2, 104, 0.3);
-    display: flex;
-    justify-content: center;
-    padding: 2%;
-    margin: 3% 0 5% 0;
-    max-width: 90vw;
     border: 4px solid #fff;
+    max-width: 28rem;
+    width: 28rem;
+    margin-bottom: 30px;
+    position: relative;
+    top: 100px;
 }
 
 h1 {
-    font-size: 13vw;
+    font-size: 2.7rem;
     font-weight: bold;
     text-align: center;
-    max-width: 100vw;
-    margin: 1%;
     text-transform: uppercase;
+    padding: 20px;
 }
 
 .game-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    max-width: 100vw;
-    max-height: 100vh;
+    justify-content: center;
+    align-self: center;
+    justify-self: center;
+    position: relative;
+    top: 100px;
+    max-width: 28rem;
+    width: 28rem;
+    max-height: 40rem;
+    height: 30rem;
     background-color: rgba(0, 2, 104, 0.3);
     border: 4px solid #fff;
 }
 
 h2 {
-    font-size: 9.5vw;
+    font-size: 2.2rem;
     font-weight: bold;
-    margin: 2% 2% 0 2%;
-    padding: 0 0 1% 0;
     text-transform: uppercase;
+    align-self: center;
+    padding-top: 0;
+    margin: 10px 0 20px 0;
 }
 
 .game-box {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 90vw;
-    padding: 0;
-    margin: 1%;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 
 
-h3 {
-    font-size: 20vw;
+.number-1,
+.number-100 {
+    display: flex;
+    font-size: 4rem;
     font-weight: bold;
     color: rgb(0, 255, 255);
-    padding: 0 2% 0 2%;
-    margin: 0;
+    padding: 5px;
+    margin: 30px 10px 10px 10px;
+
 }
 
 .number-1 {
-    display: flex;
-    justify-content: flex-start;
-    align-self: start;
-    padding: 2% 4%;
-
+    position: relative;
+    left: 1rem;
 }
 
 .number-100 {
-    display: flex;
-    justify-content: flex-end;
-    align-self: end;
-    padding: 2% 4%;
-
+    position: relative;
+    right: 1rem;
 }
-
-
 
 
 h4 {
-    font-size: 15vw;
+    font-size: 4rem;
     font-weight: bold;
-    padding: 0 1%;
-    margin: 0;
+    padding: 0;
+    margin: 30px 5px 0 5px;
 }
 
 .left {
-    display: flex;
-    justify-content: flex-start;
-    align-self: start;
-    position: relative;
-    left: 15%;
-    padding: 1% 4%;
+    padding: 5px;
 }
 
 .right {
-    display: flex;
-    justify-content: flex-end;
-    align-self: end;
-    position: relative;
-    right: 15%;
-    padding: 1% 4%;
+    padding: 5px;
 }
-
-
 
 
 .guess-box {
     background-color: rgb(190, 190, 190);
-    width: 30%;
-    height: 6vh;
-    margin: 0 20px;
-    font-size: 2%;
+    font-size: 3rem;
+    max-width: 4rem;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    margin: 20px 5px 0 5px;
 }
 
 
 
 .guess-btn {
-    font-size: 8vw;
+    font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
-    margin: 2%;
-    padding: 3%;
     color:rgba(0, 2, 104,);
     background-color: rgb(190, 190, 190);
     border: 4px solid rgb(0, 255, 255);
+    margin-top: 20px;
+    padding: 5px;
 }
 
 
@@ -150,492 +134,157 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 100vw;
-    width: 94vw;
-    margin-top: 2%;
+    margin-top: 30px;
 }
 
 
 .nog {
-    font-size: 9vw;
+    font-size: 2.5rem;
     color: #fff;
-    margin: 0;
-    padding: 2%;
 }
 
 .nogs {
-    font-size: 15vw;
+    font-size: 5rem;
     color: #fff;
-    padding: 2%;
-    margin: 1%;
+
 }
 
 
 /* ------------------------ Media Queries ------------------------ */
 
-@media screen and (min-width: 446px) {
-    
-    body {
-        background-size: 200vh;
-    }
-    
+@media screen and (max-width: 470px) {
     header {
-        max-width: 100vw;
-        width: 95vw;
-        padding: 0;
-    }
-    
-    h1 {
-        font-size: 9.5vw;
-        padding: 0;
+        background-color: rgba(0, 2, 104, 0.3);
+        border: 4px solid #fff;
+        max-width: 24rem;
+        width: 28rem;
+        margin-bottom: 30px;
+        position: relative;
+        top: 100px;
     }
     
     .game-container {
-        max-width: 100vw;
-        width: 95vw;
-        height: 90vh;
-        margin: 5vw 0;
-        padding: 0;
-    }
-    
-    h2 {
-        font-size: 10vw;
-    }
-    
-    .game-box {
         display: flex;
         flex-direction: column;
         align-items: center;
-        max-width: 90vw;
-        width: 90vw;
-    }
-    
-    
-    
-    h3 {
-        font-size: 5rem;
-    }
-    
-    .number-1 {
-        display: flex;
-        justify-content: center;
-        align-self: flex-start;
-    }
-    
-    .number-100 {
-        display: flex;
-        justify-content: center;
-        align-self: flex-end;
-    }
-       
-    .guess-box {
-        width: 20vw;
-    }
-    
-    h4 {
-        display: flex;
         justify-content: center;
         align-self: center;
-    }
-    
-    .left {
-        display: flex;
-        justify-content: flex-start;
-        align-self: start;
+        justify-self: center;
         position: relative;
-        left: 15vw;
-        padding: 1% 4%;
+        top: 100px;
+        max-width: 24rem;
+        width: 28rem;
+        max-height: 40rem;
+        height: 30rem;
+        background-color: rgba(0, 2, 104, 0.3);
+        border: 4px solid #fff;
     }
-    
-    .right {
-        display: flex;
-        justify-content: flex-end;
-        align-self: end;
-        position: relative;
-        right: 15vw;
-        padding: 1% 4%;
-    }
-
-    .guess-btn {
-        font-size: 6vw;
-        margin-bottom: 4%;
-    }
-    
-     
-    .guesses-box {
-        width: 95vw;
-        height: 10vh;
-        margin: 0 20px;
-        font-size: 2vw;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-    
-    
-    .nog {
-        font-size: 8vw;
-        margin: 0;
-        padding: 2%;
-    }
-    
-    .nogs {
-        font-size: 12vw;
-        padding: 2%;
-        margin: 1%;
-    }
-
 }
 
-
-@media screen and (min-width: 540px) {
-    
-    body {
-        background-size: 200vh;
-        margin: 0;
-    }
-    
+@media screen and (max-width: 410px) {
     header {
-        max-width: 100vw;
-        width: 95vw;
-        padding: 0;
-    }
-    
-    h1 {
-        font-size: 3rem;
+        background-color: rgba(0, 2, 104, 0.3);
+        border: 4px solid #fff;
+        max-width: 20rem;
+        width: 28rem;
+        margin-bottom: 30px;
+        position: relative;
+        top: 100px;
     }
     
     .game-container {
-        width: 90vw;
-        height: 95vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 5% 0;
-        padding: 0;
-    }
-    
-    h2 {
-        font-size: 9vw;
-    }
-    
-    .game-box {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-    
-    
-    
-    h3 {
-        font-size: 14vw;
-    }
-    
-    .number-1 {
-        display: flex;
-        justify-content: center;
-        align-self: flex-start;
-    }
-    
-    .number-100 {
-        display: flex;
-        justify-content: center;
-        align-self: flex-end;
-    }
-    
-    
-    
-    
-    h4 {
-        display: flex;
         justify-content: center;
         align-self: center;
-    }
-    
-    .left {
+        justify-self: center;
         position: relative;
-        left: 15vw;
+        top: 100px;
+        max-width: 20rem;
+        width: 28rem;
+        max-height: 40rem;
+        height: 30rem;
+        background-color: rgba(0, 2, 104, 0.3);
+        border: 4px solid #fff;
     }
-    
-    .right {
-        position: relative;
-        right: 15vw;
-    }
-    
-    
-    
-    
-    .guess-box {
-        max-width: 12%;
-        max-height: 20%;
-    }
-    
-    
-    
-    .guess-btn {
+
+    .nog {
         font-size: 2rem;
     }
     
-    .guesses-box {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .nog {
-        font-size: 8vw;
-    }
-    
     .nogs {
-        font-size: 10vw;
-        position: relative;
-        right: 2vw;
-        top: 0.8vw;
-    }
-
-}
-
-@media screen and (min-width: 620px) {
-
-    header {
-        max-width: 90vw;
-    }
-
-    h1 {
-        font-size: 3.5rem;
-    }
-
-    .game-container {
-        max-width: 100vw;
-        width: 90vw;
-        height: 60vh;
-    }
-    
-    .game-box {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .number-1,
-    .number-100 {
-        align-self: center;
-    }
-
-    .left {
-        position: relative;
-        left: 0vw;
-        align-self: center;
-    }
-
-    .right {
-        position: relative;
-        right: 0vw;
-        align-self: center;
-    }
-
-    .guess-box {
-        max-width: 12vw;
-        height: 10vw;
-        max-height: 20vh;
-    }
-
-    .guess-btn {
-        font-size: 3vw;
-        max-width: 35vw;
-        max-height: 10vh;
-    }
-
-    .guesses-box {
-
+        font-size: 3rem;
     }
 }
 
-@media screen and (min-width: 835px) {
-
+@media screen and (max-width: 370px) {
     header {
-        max-width: 90vw;
+        background-color: rgba(0, 2, 104, 0.3);
+        border: 4px solid #fff;
+        max-width: 18rem;
+        width: 28rem;
+        margin-bottom: 30px;
+        position: relative;
+        top: 100px;
     }
 
     h1 {
-        font-size: 3.5rem;
-    }
-
-    .game-container {
-        max-width: 100vw;
-        width: 90vw;
-        height: 60vh;
-        padding-bottom: 2%;
+        font-size: 2rem;
+        margin: 0;
     }
     
-    .game-box {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .number-1,
-    .number-100 {
-        align-self: center;
-    }
-
-    .left {
-        position: relative;
-        left: 0vw;
-    }
-
-    .right {
-        position: relative;
-        right: 0vw;
-    }
-
-    .guess-box {
-        max-width: 12vw;
-        height: 8vw;
-        max-height: 20vh;
-    }
-
-    .guess-btn {
-        font-size: 2.5vw;
-        max-width: 35vw;
-        max-height: 8vh;
+    .game-container {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
-    }
-
-
-    .guesses-box {
-       
-    }
-}
-
-@media screen and (min-width: 920px) {
-
-    header {
-        max-width: 90vw;
-    }
-
-    h1 {
-        font-size: 3.5rem;
-    }
-
-    .game-container {
-        max-width: 100vw;
-        width: 90vw;
-        height: 70vh;
-        padding-bottom: 2%;
-    }
-    
-    .game-box {
-        flex-direction: row;
         justify-content: center;
-        align-items: center;
-    }
-
-    .number-1,
-    .number-100 {
         align-self: center;
-    }
-
-    .left {
+        justify-self: center;
         position: relative;
-        left: 0vw;
+        top: 100px;
+        max-width: 18rem;
+        width: 28rem;
+        max-height: 40rem;
+        height: 30rem;
+        background-color: rgba(0, 2, 104, 0.3);
+        border: 4px solid #fff;
     }
 
-    .right {
-        position: relative;
-        right: 0vw;
+    h2 {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-top: 0;
+        padding-top: 0;
     }
 
-    .guess-box {
-        max-width: 12vw;
-        height: 8vw;
-        max-height: 20vh;
-    }
-
-    .guess-btn {
-        font-size: 2.5vw;
-        max-width: 35vw;
-        max-height: 8vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-
-    .guesses-box {
-       
-    }
-}
-
-@media screen and (min-width: 1110px) {
-
-    body {
-        background-size: 140vw;
-    }
-
-    header {
-        max-width: 90vw;
-    }
-
-    h1 {
-        font-size: 5rem;
-    }
-
-    .game-container {
-        max-width: 100vw;
-        width: 90vw;
-        height: 70vh;
-        padding-bottom: 2%;
-    }
-    
     .game-box {
-
+        max-width: 18rem;
+        align-items: center;
     }
 
     .number-1,
     .number-100 {
-
+        font-size: 3rem;
+        margin: 5px;
     }
 
-    .left {
-
-    }
-
+    .left,
     .right {
-
+        align-self: center;
+        margin: 0 5px;
     }
 
     .guess-box {
-        max-width: 12vw;
-        height: 8vw;
-        max-height: 20vh;
+        font-size: 2rem;
+        margin: 5px;
+        width: 3.5rem;
     }
 
-    .guess-btn {
-
+    h4 {
+        font-size: 3rem;
+        margin-bottom: 0;
     }
 
-
-    .guesses-box {
-       
-    }
-
-    .nog {
-
-    }
-
-    .nogs {
-
-    }
-}
-
-
-@media screen and (min-width: 1440px) {
-
-    body {
-        background-size: cover;
-    }
-
+    
 }
