@@ -17,15 +17,16 @@
             <div class="game-box">
                 <h3 class="number-1">1</h3>
                 <h4 class="left"> < </h4>
-                <input class="guess-box" type="number">
+                <input class="guess-box" type="number" id="guess-input" min="1" max="100" placeholder="50">
                 <h4 class="right"> > </h4>
                 <h3 class="number-100">100</h3>
             </div>
-            <button class="guess-btn">Submit Guess</button>
+            <button class="guess-btn" id="submit-guess">Submit Guess</button>
             <div class="guesses-box">
                 <h3 class="nog">Guesses remaining:</h3>
-                <p class="nogs">5</p>
+                <p class="nogs" id="remaining-guesses">10</p>
             </div>
+            <div id="feedback"></div>
         </div>
     </main>
 
