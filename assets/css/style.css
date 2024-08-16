@@ -425,11 +425,13 @@ h4 {
     .left {
         position: relative;
         left: 0vw;
+        align-self: center;
     }
 
     .right {
         position: relative;
         right: 0vw;
+        align-self: center;
     }
 
     .guess-box {
@@ -569,6 +571,10 @@ h4 {
 
 @media screen and (min-width: 1110px) {
 
+    body {
+        background-size: 140vw;
+    }
+
     header {
         max-width: 90vw;
     }
@@ -621,6 +627,15 @@ h4 {
     }
 
     .nogs {
-        
+
     }
+}
+
+
+@media screen and (min-width: 1440px) {
+
+    body {
+        background-size: cover;
+    }
+
 }
