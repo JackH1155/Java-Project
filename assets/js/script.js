@@ -45,12 +45,18 @@ function disableGame() {
     document.getElementById('guess-input').disabled = true;
 }
 
-// Event listener for button click
+function resetGame() {
+    window.location.reload();
+}
+
+
 document.getElementById('submit-guess').addEventListener('click', submitGuess);
 
-// Event listener for Enter key
 document.getElementById('guess-input').addEventListener('keydown', function(event) {
     if (event.key === "Enter") {
         submitGuess();
     }
+
+    document.getElementById('reset').addEventListener('click', resetGame);
+
 });
