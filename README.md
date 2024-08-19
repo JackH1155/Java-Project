@@ -91,7 +91,7 @@ Number Guesser was tested on Chrome & Opera
 - JavaScript
   -[JSHint](https://jshint.com/)
 
-  ![JavaScript Validation](assets/images/jsHint.png)
+  ![JavaScript Validation](assets/images/jshint.png)
 
 
 - Lighthouse tools were also utilised to test the website.
