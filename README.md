@@ -97,7 +97,7 @@ Number Guesser was tested on Chrome & Opera
 - Lighthouse tools were also utilised to test the website.
 
 Desktop:
-![Desktop Scores](assets/images/lighthouse.png
+![Desktop Scores](assets/images/lighthouse.png)
 
 
 ## User Story Testing
