@@ -122,10 +122,6 @@ My background image came from freepik. (<a href="https://www.freepik.com/free-ve
 
 ### Content
 
-### Media
-
-All images were taken from [Unsplash](https://unsplash.com/)
-
 
 ## Acknowledgements
 
